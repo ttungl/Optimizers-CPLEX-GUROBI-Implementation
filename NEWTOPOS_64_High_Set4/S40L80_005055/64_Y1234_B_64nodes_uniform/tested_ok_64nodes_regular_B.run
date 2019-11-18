@@ -1,0 +1,214 @@
+solve;
+display cost_of_arcs;
+
+print "+++++++++";
+print "Num of Long Links utilization";
+print "+++++++++";
+for {(i,j) in ARCS_ED} {	
+	#printf "flowsum %d %d: %d\n", i, j, FLOWSUM[i,j];
+	if FLOWSUM[i,j]>0 then {
+		for {(p,q) in LONGLINKS_ED} {
+			if (i==p && j==q) then {
+				printf "%d %d: %d\n", i, j, FLOWSUM[i,j];
+			}
+		}
+	}		
+}
+print "+++++++++";
+print "Num of Links utilization";
+print "+++++++++";
+for {(i,j) in ARCS_ED} {		
+	if FLOWSUM[i,j]>0 then {
+		printf "flowsum %d %d: %d\n", i, j, FLOWSUM[i,j];	
+	}		
+}
+print "+++++++++";
+for {(i,j) in ARCS_ED} {		
+	if FLOW1[i,j]>0 then {
+		printf "flow1 %d %d: %d\n", i, j, FLOW1[i,j];
+		for {(p,q) in LONGLINKS_ED} {
+			if (i==p && j==q) then {
+				printf "longlink %d %d\n",i,j;
+			}			
+		}
+	}		
+}
+print "+++++++++";
+for {(i,j) in ARCS_ED} {		
+	if FLOW2[i,j]>0 then {
+		printf "flow2 %d %d: %d\n", i, j, FLOW2[i,j];
+		for {(p,q) in LONGLINKS_ED} {
+			if (i==p && j==q) then {
+				printf "longlink %d %d\n",i,j;
+			}			
+		}
+	}		
+}
+print "+++++++++";
+for {(i,j) in ARCS_ED} {		
+	if FLOW3[i,j]>0 then {
+		printf "flow3 %d %d: %d\n", i, j, FLOW3[i,j];
+		for {(p,q) in LONGLINKS_ED} {
+			if (i==p && j==q) then {
+				printf "longlink %d %d\n",i,j;
+			}			
+		}
+	}		
+}
+print "+++++++++";
+for {(i,j) in ARCS_ED} {		
+	if FLOW4[i,j]>0 then {
+		printf "flow4 %d %d: %d\n", i, j, FLOW4[i,j];
+		for {(p,q) in LONGLINKS_ED} {
+			if (i==p && j==q) then {
+				printf "longlink %d %d\n",i,j;
+			}			
+		}
+	}		
+}
+print "+++++++++";
+for {(i,j) in ARCS_ED} {		
+	if FLOW5[i,j]>0 then {
+		printf "flow5 %d %d: %d\n", i, j, FLOW5[i,j];
+		for {(p,q) in LONGLINKS_ED} {
+			if (i==p && j==q) then {
+				printf "longlink %d %d\n",i,j;
+			}			
+		}
+	}		
+}
+print "+++++++++";
+for {(i,j) in ARCS_ED} {		
+	if FLOW6[i,j]>0 then {
+		printf "flow6 %d %d: %d\n", i, j, FLOW6[i,j];
+		for {(p,q) in LONGLINKS_ED} {
+			if (i==p && j==q) then {
+				printf "longlink %d %d\n",i,j;
+			}			
+		}
+	}		
+}
+print "+++++++++";
+for {(i,j) in ARCS_ED} {		
+	if FLOW7[i,j]>0 then {
+		printf "flow7 %d %d: %d\n", i, j, FLOW7[i,j];
+		for {(p,q) in LONGLINKS_ED} {
+			if (i==p && j==q) then {
+				printf "longlink %d %d\n",i,j;
+			}			
+		}
+	}		
+}
+print "+++++++++";
+for {(i,j) in ARCS_ED} {		
+	if FLOW8[i,j]>0 then {
+		printf "flow8 %d %d: %d\n", i, j, FLOW8[i,j];
+		for {(p,q) in LONGLINKS_ED} {
+			if (i==p && j==q) then {
+				printf "longlink %d %d\n",i,j;
+			}			
+		}
+	}		
+}
+print "+++++++++";
+for {(i,j) in ARCS_ED} {		
+	if FLOW9[i,j]>0 then {
+		printf "flow9 %d %d: %d\n", i, j, FLOW9[i,j];
+		for {(p,q) in LONGLINKS_ED} {
+			if (i==p && j==q) then {
+				printf "longlink %d %d\n",i,j;
+			}			
+		}
+	}		
+}
+print "+++++++++";
+for {(i,j) in ARCS_ED} {		
+	if FLOW10[i,j]>0 then {
+		printf "flow10 %d %d: %d\n", i, j, FLOW10[i,j];
+		for {(p,q) in LONGLINKS_ED} {
+			if (i==p && j==q) then {
+				printf "longlink %d %d\n",i,j;
+			}			
+		}
+	}		
+}
+print "+++++++++";
+for {(i,j) in ARCS_ED} {		
+	if FLOW11[i,j]>0 then {
+		printf "flow11 %d %d: %d\n", i, j, FLOW11[i,j];
+		for {(p,q) in LONGLINKS_ED} {
+			if (i==p && j==q) then {
+				printf "longlink %d %d\n",i,j;
+			}			
+		}
+	}		
+}
+print "+++++++++";
+for {(i,j) in ARCS_ED} {		
+	if FLOW12[i,j]>0 then {
+		printf "flow12 %d %d: %d\n", i, j, FLOW12[i,j];
+		for {(p,q) in LONGLINKS_ED} {
+			if (i==p && j==q) then {
+				printf "longlink %d %d\n",i,j;
+			}			
+		}
+	}		
+}
+print "+++++++++";
+for {(i,j) in ARCS_ED} {		
+	if FLOW13[i,j]>0 then {
+		printf "flow13 %d %d: %d\n", i, j, FLOW13[i,j];
+		for {(p,q) in LONGLINKS_ED} {
+			if (i==p && j==q) then {
+				printf "longlink %d %d\n",i,j;
+			}			
+		}
+	}		
+}
+print "+++++++++";
+for {(i,j) in ARCS_ED} {		
+	if FLOW14[i,j]>0 then {
+		printf "flow14 %d %d: %d\n", i, j, FLOW14[i,j];
+		for {(p,q) in LONGLINKS_ED} {
+			if (i==p && j==q) then {
+				printf "longlink %d %d\n",i,j;
+			}			
+		}
+	}		
+}
+print "+++++++++";
+for {(i,j) in ARCS_ED} {		
+	if FLOW15[i,j]>0 then {
+		printf "flow15 %d %d: %d\n", i, j, FLOW15[i,j];
+		for {(p,q) in LONGLINKS_ED} {
+			if (i==p && j==q) then {
+				printf "longlink %d %d\n",i,j;
+			}			
+		}
+	}		
+}
+print "+++++++++";
+for {(i,j) in ARCS_ED} {		
+	if FLOW16[i,j]>0 then {
+		printf "flow16 %d %d: %d\n", i, j, FLOW16[i,j];
+		for {(p,q) in LONGLINKS_ED} {
+			if (i==p && j==q) then {
+				printf "longlink %d %d\n",i,j;
+			}			
+		}
+	}		
+}
+print "+++++++++";
+
+
+
+
+
+
+
+display ARCS_ED;
+display ARCS;
+display COST;
+display CAP;
+#expand;
+

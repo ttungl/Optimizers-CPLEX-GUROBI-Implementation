@@ -1,0 +1,33 @@
+solve;
+display cost_of_arcs;
+
+print "+++++++++";
+print "Num of Long Links utilization";
+print "+++++++++";
+for {(i,j) in ARCS_ED} {	
+	#printf "flowsum %d %d: %d\n", i, j, FLOWSUM[i,j];
+	if FLOWSUM[i,j]>0 then {
+		for {(p,q) in LONGLINKS_ED} {
+			if (i==p && j==q) then {
+				printf "%d %d: %d\n", i, j, FLOWSUM[i,j];
+			}
+		}
+	}		
+}
+print "+++++++++";
+print "Num of Links utilization";
+print "+++++++++";
+for {(i,j) in ARCS_ED} {		
+	if FLOWSUM[i,j]>0 then {
+		printf "flowsum %d %d: %d\n", i, j, FLOWSUM[i,j];	
+	}		
+}
+print "+++++++++";
+
+
+display ARCS_ED;
+display ARCS;
+display COST;
+display CAP;
+#expand;
+

@@ -1,0 +1,609 @@
+solve;
+display cost_of_arcs;
+
+print "+++++++++";
+print "Num of Long Links utilization";
+print "+++++++++";
+for {(i,j) in ARCS_ED} {	
+	#printf "flowsum %d %d: %d\n", i, j, FLOWSUM[i,j];
+	if FLOWSUM[i,j]>0 then {
+		for {(p,q) in LONGLINKS_ED} {
+			if (i==p && j==q) then {
+				printf "%d %d: %d\n", i, j, FLOWSUM[i,j];
+			}
+		}
+	}		
+}
+print "+++++++++";
+print "Num of Links utilization";
+print "+++++++++";
+for {(i,j) in ARCS_ED} {		
+	if FLOWSUM[i,j]>0 then {
+		printf "flowsum %d %d: %d\n", i, j, FLOWSUM[i,j];	
+	}		
+}
+
+print "+++++++++"; 
+print "For SUPP1 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW1[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW1[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP2 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW2[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW2[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP3 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW3[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW3[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP4 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW4[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW4[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP5 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW5[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW5[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP6 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW6[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW6[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP7 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW7[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW7[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP8 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW8[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW8[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP9 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW9[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW9[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP10 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW10[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW10[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP11 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW11[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW11[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP12 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW12[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW12[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP13 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW13[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW13[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP14 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW14[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW14[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP15 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW15[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW15[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP16 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW16[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW16[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP17 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW17[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW17[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP18 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW18[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW18[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP19 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW19[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW19[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP20 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW20[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW20[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP21 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW21[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW21[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP22 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW22[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW22[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP23 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW23[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW23[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP24 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW24[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW24[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP25 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW25[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW25[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP26 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW26[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW26[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP27 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW27[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW27[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP28 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW28[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW28[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP29 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW29[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW29[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP30 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW30[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW30[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP31 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW31[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW31[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP32 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW32[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW32[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP33 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW33[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW33[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP34 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW34[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW34[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP35 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW35[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW35[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP36 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW36[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW36[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP37 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW37[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW37[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP38 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW38[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW38[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP39 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW39[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW39[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP40 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW40[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW40[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP41 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW41[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW41[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP42 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW42[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW42[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP43 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW43[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW43[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP44 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW44[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW44[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP45 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW45[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW45[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP46 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW46[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW46[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP47 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW47[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW47[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP48 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW48[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW48[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP49 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW49[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW49[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP50 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW50[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW50[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP51 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW51[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW51[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP52 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW52[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW52[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP53 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW53[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW53[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP54 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW54[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW54[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP55 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW55[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW55[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP56 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW56[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW56[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP57 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW57[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW57[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP58 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW58[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW58[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP59 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW59[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW59[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP60 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW60[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW60[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP61 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW61[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW61[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP62 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW62[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW62[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP63 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW63[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW63[i,j];
+   } 
+} 
+
+print "+++++++++"; 
+print "For SUPP64 : links utilization";
+print "+++++++++"; 
+for {(i,j) in ARCS_ED} { 
+   if FLOW64[i,j]>0 then {
+        printf "%d %d: %d \n" , i, j, FLOW64[i,j];
+   } 
+} 
+
+
+
+display ARCS_ED;
+display ARCS;
+display COST;
+display CAP;
+#expand;
+
